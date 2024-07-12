@@ -5,13 +5,18 @@ The primary objective of this project is to enhance investment strategies for gr
 
 ## Implementation
 ### Data Collection
-#### Weather Data: Collected using Visual Crossing API, including variables such as temperature, precipitation, humidity, and more.
-#### Bond Data: Historical price data for the iShares Global Green Bond ETF (BGRN).
-#### Satellite Image Data: Sourced from NASA, includes the count of natural calamities observed.
+#### Weather Data: 
+Collected using Visual Crossing API, including variables such as temperature, precipitation, humidity, and more.
+#### Bond Data: 
+Historical price data for the iShares Global Green Bond ETF (BGRN).
+#### Satellite Image Data: 
+Sourced from NASA, includes the count of natural calamities observed.
 
 ### Feature Extraction and Engineering
-#### Template Matching using OpenCV: Employed to detect and extract specific environmental features from satellite images.
-##### Data Preprocessing: Included handling data types, removing outliers, and aligning timestamps.
+#### Template Matching using OpenCV: 
+Employed to detect and extract specific environmental features from satellite images.
+##### Data Preprocessing: 
+Included handling data types, removing outliers, and aligning timestamps.
 #### Models Used
 ###### 1. Linear Regression
 ###### 2. Decision Tree
@@ -25,9 +30,12 @@ Cloud Cover Percentage Calculation: Used grayscale conversion and binary thresho
 Template Matching for Natural Disasters: Identified occurrences of natural disasters by matching smaller image segments to predefined templates.
 
 ## Results
-#### Random Forest Model: Achieved the highest R-squared value of 45% when enriched features were included.
-#### Cloud Coverage: Emerged as the second most important feature in the analysis.
-#### Model Performance: Improved significantly with the inclusion of features derived from image processing techniques.
+#### Random Forest Model: 
+Achieved the highest R-squared value of 45% when enriched features were included.
+#### Cloud Coverage: 
+Emerged as the second most important feature in the analysis.
+#### Model Performance: 
+Improved significantly with the inclusion of features derived from image processing techniques.
 ### Key Observations
 ###### 1. Random Forest is the best-performing model with an R-squared value of 45%.
 ###### 2. Enhanced Features: Models including natural disasters and cloud cover % features outperformed those without these enriched features.
